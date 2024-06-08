@@ -6,13 +6,14 @@
 
 .container {
   display: flex;
+  margin: 0;
 }
 
 /* SIDEBAR */
 
 .sidebar {
   background-color: #181b1d;
-  color: #f5f7e9;
+  color: #dcded9;
   height: 100vh;
   width: 200px;
   flex-shrink: 0;
@@ -27,7 +28,7 @@
   border-radius: 50%;
   margin-top: 80px;
   /* margin-left: 15px; */
-  border: 10px solid #f5f7e913;
+  border: 10px solid #f5f7f113;
 }
 
 .sidebar-menu {
@@ -47,7 +48,7 @@ ul {
 /* MAIN */
 
 .main {
-  color: #f5f7e9;
+  color: #f5f7f1;
   flex: 5;
   margin: 0;
   padding: 0;
@@ -55,17 +56,22 @@ ul {
   margin-left: 200px;
 }
 
+p {
+  font-size: 1.2rem;
+  color: #181b1d;
+}
+
 /* HERO */
 
 h1 {
-  color: #f5f7e9;
+  color: #f5f7f1;
   font-size: 6rem;
-  padding: 100px 0 50px 0px;
+  padding: 110px 0 300px 0px;
 }
 
 .hero {
   background-color: #181b1d;
-  color: #f5f7e9;
+  color: #f5f7f1;
   height: 100vh;
   margin: 0;
   /* padding: 0; */
@@ -78,7 +84,6 @@ h1 {
 
 .hero_name {
   font-size: 3rem;
-  padding-top: 200px;
 }
 
 .hero_degree {
@@ -89,6 +94,56 @@ h1 {
 /* ABOUT */
 
 .about {
-  height: 100vh;
-  background-color: #f5f7e9;
+  /* height: 100vh; */
+  background-color: #f5f7f1;
+  color: #181b1d;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  padding-bottom: 20px;
+  color: #181b1d;
+}
+
+.aboutMe {
+  padding: 10px 0;
+  width: 75%;
+  text-align: justify;
+}
+
+.aboutPic {
+  border-radius: 25px;
+}
+
+.about_content {
+  display: flex;
+  padding: 20px 0 30px 0px;
+}
+
+.info,
+.info2 {
+  display: inline;
+  padding: 30px 0 50px 20px;
+  font-size: 1.1rem;
+}
+
+.info2 {
+  margin-left: 30px;
+  display: block;
+  padding-top: 5px;
+}
+
+.infos_perso {
+  padding-left: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills {
+  background-color: #dcded9;
+  height: 50vh;
 }
