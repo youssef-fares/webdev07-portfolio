@@ -10,6 +10,11 @@
   /* padding: 0 !important; */
 }
 
+.section {
+  color: #181b1d;
+  padding: 50px;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -99,11 +104,9 @@ h1 {
   /* height: 100vh; */
   /* background-color: #f5f7f1; */
   background: linear-gradient(#f5f7f1, #fff);
-  color: #181b1d;
-  padding: 50px;
 }
 
-.about h2 {
+.sectionTitle {
   font-size: 2rem;
   text-decoration: underline;
   padding-bottom: 20px;
@@ -118,6 +121,7 @@ h1 {
 
 .aboutPic {
   border-radius: 25px;
+  height: 400px;
 }
 
 .about_content {
@@ -146,8 +150,76 @@ h1 {
   justify-content: space-around;
 }
 
+.linkedin {
+}
+
+.linkedinLink {
+  text-decoration: none;
+  color: #181b1d;
+  font-weight: 600;
+}
+
+li a {
+  text-decoration: none !important;
+  color: #d8dad6;
+}
+
+a:hover {
+  color: rgb(187, 165, 61);
+}
+
+/* SKILLS */
+
 .skills {
   /* background-color: #dcded9; */
-  background: linear-gradient(#dcded9, #fff);
-  height: 50vh;
+  background: linear-gradient(to right, #d8dad6, #fff);
+}
+
+.progress-bar {
+  padding-right: 50px;
+}
+
+.skillsContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skillsList {
+  width: 30%;
+  margin: 20px 200px 10px 0px;
+  margin-left: 0px !important;
+}
+
+.skillsPic {
+  border-radius: 25px;
+  height: 350px;
+  margin: 0 80px 80px 20px;
+}
+
+.cad,
+.cae,
+.programming {
+  padding-top: 10px;
+}
+
+/* RESUME */
+
+.resume {
+  height: 70vh;
+  background: linear-gradient(#f5f7f1, #fff);
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  height: 70vh;
+  background: linear-gradient(to right, #d8dad6, #fff);
+}
+
+/* CONTACT */
+
+.contact {
+  height: 70vh;
+  background: linear-gradient(#f5f7f1, #fff);
 }

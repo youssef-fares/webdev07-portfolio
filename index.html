@@ -30,25 +30,25 @@
         <img class="id-left" src="./assets/images/idphoto2.png" />
         <div class="sidebar-menu">
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SKILLS</li>
-            <li>RESUME</li>
-            <li>PORTFOLIO</li>
-            <li>CONTACT</li>
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
       <div class="main">
-        <div class="hero">
-          <h1>Mechanical Design Engineer</h1>
+        <div class="hero" id="hero">
+          <h1>Sr. Mechanical Design Engineer</h1>
           <h2 class="hero_name">Youssef Fares</h2>
           <h2 class="hero_degree">MSc Mechanical Engineering (Distinction)</h2>
           <!-- <img class="id-hero" src="./assets/images/id.png" /> -->
         </div>
 
-        <div class="about">
-          <h2>About</h2>
+        <div class="section about" id="about">
+          <h2 class="sectionTitle">About</h2>
           <p class="aboutMe">
             Hi there, I am Youssef, welcome to my personal page.
           </p>
@@ -61,11 +61,7 @@
             applications.
           </p>
           <div class="about_content">
-            <img
-              class="aboutPic"
-              src="./assets/images/about_pic_color.png"
-              height="400px"
-            />
+            <img class="aboutPic" src="./assets/images/about_pic_color.png" />
             <div class="infos_perso">
               <div class="age">
                 <img src="./assets/images/age.svg" height="25px" />
@@ -84,8 +80,9 @@
 
               <div class="linkedin">
                 <img src="./assets/images/linkedin.svg" height="25px" />
+
                 <a
-                  class="info"
+                  class="info linkedinLink"
                   href="https://www.linkedin.com/in/youssef-fares-b936a846/"
                   >My Linkedin</a
                 >
@@ -99,21 +96,92 @@
             </div>
           </div>
         </div>
-        <div class="skills">
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Basic example"
-            aria-valuenow="75"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div class="progress-bar" width="50%" style="width: 75%"></div>
+
+        <div class="section skills" id="skills">
+          <h2 class="sectionTitle">Skills</h2>
+          <div class="skillsContent">
+            <div class="skillsList">
+              <div class="cad">
+                <h3>CAD</h3>
+
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="background-color: white"
+                >
+                  <div
+                    class="progress-bar"
+                    style="background-color: rgb(187, 165, 61); width: 80%"
+                  ></div>
+                </div>
+                <p>Solidworks (CSWP), Catia V5 | 2D drawings (BS 8888)</p>
+              </div>
+
+              <div class="cae">
+                <h3>CAE (FEA/CFD)</h3>
+
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="background-color: white"
+                >
+                  <div
+                    class="progress-bar"
+                    style="background-color: rgb(187, 165, 61); width: 65%"
+                    style="width: 65%"
+                    style="color: black"
+                  ></div>
+                </div>
+                <p>Converge CFD, Ansys, SW Simulation</p>
+              </div>
+
+              <div class="programming">
+                <h3>Programming</h3>
+
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="background-color: white"
+                >
+                  <div
+                    class="progress-bar"
+                    style="background-color: rgb(187, 165, 61); width: 35%"
+                  ></div>
+                </div>
+                <p>HTML/CSS/JS; C#; Python; Matlab</p>
+              </div>
+            </div>
+
+            <img
+              class="skillsPic"
+              src="./assets/images/2D_drawing.jpg"
+              height="200px;"
+            />
           </div>
         </div>
-        <div class="resume"></div>
-        <div class="portoolio"></div>
-        <div class="contact"></div>
+
+        <div class="section resume" id="resume">
+          <h2 class="sectionTitle">Resume</h2>
+        </div>
+        <div class="section portfolio" id="portfolio">
+          <h2 class="sectionTitle">Portfolio</h2>
+        </div>
+
+        <div class="section contact" id="contact">
+          <h2 class="sectionTitle">Contact</h2>
+        </div>
       </div>
     </div>
   </body>
