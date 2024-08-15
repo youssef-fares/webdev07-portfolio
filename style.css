@@ -41,7 +41,7 @@
   margin-top: 20px;
 }
 
-ul {
+.sidebar-menu ul {
   list-style-type: none;
   padding-right: 15px;
 }
@@ -55,7 +55,7 @@ ul {
 /* MAIN */
 
 .main {
-  color: #f5f7f1;
+  color: #f5f8fd;
   flex: 5;
   margin: 0;
   padding: 0;
@@ -103,7 +103,7 @@ h1 {
 .about {
   /* height: 100vh; */
   /* background-color: #f5f7f1; */
-  background: linear-gradient(#f5f7f1, #fff);
+  background: linear-gradient(#dadfe6e7, #fff);
 }
 
 .sectionTitle {
@@ -186,8 +186,8 @@ a:hover {
 }
 
 .skillsList {
-  width: 30%;
-  margin: 20px 200px 10px 0px;
+  width: 30vw;
+  margin: 20px 20px 10px 0px;
   margin-left: 0px !important;
 }
 
@@ -206,8 +206,54 @@ a:hover {
 /* RESUME */
 
 .resume {
-  height: 70vh;
   background: linear-gradient(#f5f7f1, #fff);
+}
+
+hr {
+}
+
+.experience {
+  display: flex;
+  width: 70%;
+  /* justify-content: left; */
+  padding-bottom: 30px;
+
+  /* margin:0 10%; */
+}
+
+.workExperience {
+  background-color: lightgray;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+.time {
+  padding-right: 40px;
+  padding-top: 4px;
+  /* width: 150px; */
+  flex: 1;
+}
+
+.jobDesc {
+  flex: 5;
+}
+
+.jobTitle {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.company {
+  color: gray;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.duration {
+  margin: 0 0;
+  padding-top: 0 0;
+  color: lightslategray;
 }
 
 /* PORTFOLIO */
