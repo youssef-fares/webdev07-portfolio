@@ -55,7 +55,7 @@
 /* MAIN */
 
 .main {
-  color: #f5f8fd;
+  color: #dcded9;
   flex: 5;
   margin: 0;
   padding: 0;
@@ -64,7 +64,7 @@
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #181b1d;
 }
 
@@ -103,7 +103,8 @@ h1 {
 .about {
   /* height: 100vh; */
   /* background-color: #f5f7f1; */
-  background: linear-gradient(#dadfe6e7, #fff);
+  /* background: linear-gradient(#dadfe6e7, #fff); */
+  background: #f3f3f3;
 }
 
 .sectionTitle {
@@ -172,7 +173,7 @@ a:hover {
 
 .skills {
   /* background-color: #dcded9; */
-  background: linear-gradient(to right, #d8dad6, #fff);
+  background: linear-gradient(to right, #dbdbdb, #fff);
 }
 
 .progress-bar {
@@ -206,13 +207,19 @@ a:hover {
 /* RESUME */
 
 .resume {
-  background: linear-gradient(#f5f7f1, #fff);
+  /* background: linear-gradient(#dadfe6e7, #fff); */
+  background: #f3f3f3;
 }
 
 hr {
 }
 
-.experience {
+li::marker {
+  color: rgb(187, 165, 61);
+}
+
+.experience,
+.education {
   display: flex;
   width: 70%;
   /* justify-content: left; */
@@ -221,21 +228,30 @@ hr {
   /* margin:0 10%; */
 }
 
-.workExperience {
-  background-color: lightgray;
+h4 {
+  background-color: #dbdbdb;
   padding: 10px 20px;
   margin-top: 50px;
 }
 
+.jobDesc li,
+.languages li,
+.education li {
+  font-size: 1.25rem;
+}
+
 .time {
-  padding-right: 40px;
+  padding-right: 30px;
   padding-top: 4px;
   /* width: 150px; */
   flex: 1;
 }
 
-.jobDesc {
+.jobDesc,
+.diploma {
   flex: 5;
+  border-left: 2px solid rgb(187, 165, 61);
+  padding-left: 30px;
 }
 
 .jobTitle {
@@ -253,19 +269,94 @@ hr {
 .duration {
   margin: 0 0;
   padding-top: 0 0;
-  color: lightslategray;
+  color: gray;
+  text-align: right;
 }
 
+.degree {
+  text-align: right;
+}
+
+strong {
+  font-size: 1.3rem;
+}
 /* PORTFOLIO */
 
 .portfolio {
-  height: 70vh;
-  background: linear-gradient(to right, #d8dad6, #fff);
+  /* background: linear-gradient(to right, #d8dad6, #fff); */
+  background: #e5e5e5;
+}
+
+.portfolio-image {
+  /* width: 110%; */
+  margin-bottom: 80px;
+}
+
+.portfolio-slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* CONTACT */
 
 .contact {
-  height: 70vh;
-  background: linear-gradient(#f5f7f1, #fff);
+  background: #f3f3f3;
+  font-size: 1.25rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.btn-submit {
+  background-color: #181b1d !important;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+  font-size: 1.25rem !important;
+  color: white !important;
+}
+.btn-submit:hover {
+  background-color: rgb(187, 165, 61) !important;
+  color: #181b1d !important;
+}
+
+#name,
+#email {
+  width: 30%;
+}
+
+#message,
+#file {
+  width: 80%;
+}
+
+#message {
+  height: 300px;
+}
+
+/* Footer */
+
+.footer {
+  background: #181b1d;
+  color: #f5f7f1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.footerName {
+  padding-left: 40px;
+}
+
+.footerYear {
+  padding-right: 40px;
 }
