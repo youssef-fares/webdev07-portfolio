@@ -35,7 +35,7 @@
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#resume">RESUME</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
-            <!-- <li><a href="#contact">CONTACT</a></li> -->
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -51,7 +51,7 @@
           <h2 class="sectionTitle">About</h2>
           <p class="aboutMe">Hi, I am Youssef, welcome to my personal page.</p>
           <p class="aboutMe">
-            I have worked over the past 6 years on various projects as a
+            I have worked over the past 7 years on various projects as a
             mechanical engineer (Design and Analysis) where I could build a high
             proficiency in Mechanical Design, from small prototype designs to
             large assembly drawings, and demonstrate my skills in CFD and FEA
@@ -86,6 +86,7 @@
 
                 <a
                   class="info linkedinLink"
+                  target="”_blank”"
                   href="https://www.linkedin.com/in/youssef-fares-b936a846/"
                   >My Linkedin</a
                 >
@@ -171,8 +172,8 @@
 
         <div class="section resume" id="resume">
           <h2 class="sectionTitle">Resume</h2>
-          <h4>Work experience</h4>
           <hr />
+          <h4>Work experience</h4>
           <div class="experience TAE">
             <div class="time">
               <p class="duration">Jan. 2023 - Present</p>
@@ -390,47 +391,67 @@
           </div>
         </div>
 
-        <!-- <div class="section contact" id="contact">
-          <h2 class="sectionTitle">Contact</h2>
-          <form id="contactForm">
-            <div class="form-group">
+        <div class="section contact" id="contact">
+          <h2 class="sectionTitle">Get in touch</h2>
+          <form action="#" id="contactForm">
+            <div class="form-group input-field field">
               <label for="name">Name:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                class="form-control"
-                required
+                class="form-control item"
               />
+              <div class="error-txt">Please enter your name:</div>
             </div>
-            <div class="form-group">
+            <div class="form-group input-field field">
               <label for="email">Email:</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                class="form-control"
-                required
+                class="form-control item"
               />
+              <div class="error-txt email">
+                Please enter your email address:
+              </div>
             </div>
-            <div class="form-group">
+            <div class="form-group input-field field">
+              <label for="name">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-control item"
+              />
+              <div class="error-txt">Please enter a subject:</div>
+            </div>
+            <div class="form-group textarea-field field">
               <label for="message">Message:</label>
               <textarea
                 id="message"
                 name="message"
-                class="form-control"
+                class="form-control item"
                 rows="4"
-                required
               ></textarea>
+              <div class="error-txt">Message can't be blank</div>
             </div>
-            <div class="form-group">
-              <label for="file">Attach a document:</label>
-              <input type="file" id="file" name="file" class="form-control" />
+
+            <div class="form-group input-field field">
+              <label for="attachement">Attach a document:</label>
+              <input
+                type="file"
+                placeholder="FFF"
+                id="attachment"
+                name="attachment"
+                class="form-control"
+                accept=".jpg, .jpeg, .png, .doc, .docx, .pdf"
+              />
             </div>
 
             <button type="submit" class="btn btn-submit">Send Message</button>
           </form>
-        </div> -->
+        </div>
 
         <footer>
           <div class="footer">
@@ -442,32 +463,8 @@
       </div>
     </div>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("gaSUEBEpF42Jm_yMs"); // Replace with your EmailJS User ID
-      })();
-
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          var formData = new FormData(this);
-
-          // Send the form data
-          emailjs
-            .sendForm("service_r8imvc8", "template_mpc4z1n", formData)
-            .then(
-              function (response) {
-                alert("Message sent successfully!");
-                document.getElementById("contactForm").reset(); // Clear all fields after submission
-              },
-              function (error) {
-                alert("Error sending message: " + JSON.stringify(error));
-              }
-            );
-        });
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js" charset="utf-8"></script>
   </body>
 </html>

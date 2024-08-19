@@ -71,14 +71,14 @@ p {
 /* HERO */
 
 h1 {
-  color: #f5f7f1;
+  color: #f3f3f3;
   font-size: 6rem !important;
   padding: 110px 0 300px 0px;
 }
 
 .hero {
   background-color: #181b1d;
-  color: #f5f7f1;
+  color: #f3f3f3;
   height: 100vh;
   margin: 0;
   /* padding: 0; */
@@ -195,7 +195,7 @@ a:hover {
 .skillsPic {
   border-radius: 25px;
   height: 350px;
-  margin: 0 80px 80px 20px;
+  margin: 35px 80px 80px 20px;
 }
 
 .cad,
@@ -212,6 +212,7 @@ a:hover {
 }
 
 hr {
+  margin: 10px 0px !important;
 }
 
 li::marker {
@@ -285,17 +286,22 @@ strong {
 .portfolio {
   /* background: linear-gradient(to right, #d8dad6, #fff); */
   background: #e5e5e5;
+  padding-left: 20px !important;
 }
 
 .portfolio-image {
   /* width: 110%; */
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .portfolio-slides {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.portfolio .sectionTitle {
+  padding-left: 30px;
 }
 
 /* CONTACT */
@@ -333,12 +339,31 @@ strong {
 }
 
 #message,
-#file {
+#file,
+#subject {
   width: 80%;
 }
 
 #message {
-  height: 300px;
+  height: 200px;
+}
+
+.field .error-txt {
+  color: #d93025;
+  font-size: 15px;
+  margin: 2px 0;
+  display: none;
+}
+
+.field.error .item {
+  border-color: #d93025;
+}
+
+.field.error .error-txt {
+  display: block;
+}
+
+form .textarea-field .error-txt {
 }
 
 /* Footer */
@@ -359,4 +384,38 @@ strong {
 
 .footerYear {
   padding-right: 40px;
+}
+
+/* RESPONSIVENESS */
+
+@media (width < 1000px) {
+  .contain {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    justify-content: space-between;
+  }
+  .sidebar-menu li {
+    display: inline;
+    font-size: calc(2vw + 5px);
+  }
+
+  .main {
+    margin-left: 0;
+    /* margin-top: 120px; */
+  }
+
+  .id-left {
+    margin: 10px 25px;
+    height: 80px;
+    border: 3px solid #f5f7f113;
+  }
+
+  .sidebar-menu ul {
+    padding-right: 50px;
+  }
 }
